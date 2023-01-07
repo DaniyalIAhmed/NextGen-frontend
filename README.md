@@ -1,2 +1,3 @@
 # NextGen-frontend
-Developing and practicing simple frontend designs. Supporting this template till 23rd January, 2023.
+Patch 1.0:
+Added Animations in navbar, Heading and button. Minor UI changes and fixes.
