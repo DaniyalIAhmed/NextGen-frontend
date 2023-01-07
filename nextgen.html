@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Building animations</title>
+    <title>NextGen</title>
 </head>
 <style>
     body {
@@ -169,6 +169,26 @@
             height: 1vh;
         }
     } */
+    @keyframes sec {
+        from {
+            height: 0;
+        }
+
+        to {
+            height: 3rem;
+        }
+    }
+
+    @keyframes size {
+        from {
+            font-size: 0;
+        }
+
+        to {
+            font-size: 4rem;
+        }
+    }
+
     .logo {
         margin-top: 10px;
         margin-right: 72px;
@@ -178,6 +198,54 @@
 
     .logo:hover {
         color: rgb(108, 177, 119);
+    }
+
+    section {
+        font-family: 'Ubuntu', sans-serif;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        font-size: 2rem;
+        flex-direction: column;
+        margin: 120px 23px;
+    }
+
+    h2 {
+        font-size: 4rem;
+        animation-name: size;
+        animation-duration: 1s;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    .sbtn {
+        margin-top: 15%;
+        width: 10rem;
+        height: 3rem;
+        font-size: large;
+        font-family: 'Ubuntu', sans-serif;
+        border: 2px solid rgb(255, 255, 255);
+        border-radius: 10px;
+        background: none;
+        color: white;
+        animation-name: sec;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+
+    .sbtn:hover {
+        cursor: pointer;
+        color: rgb(83, 201, 103);
+        border: 2px solid rgb(83, 201, 103);
+    }
+
+    .sbtn:active {
+        cursor: pointer;
+        color: rgb(108, 177, 119);
+        border: 2px solid rgb(108, 177, 119);
+        /* border: none; */
     }
 </style>
 
@@ -219,6 +287,13 @@
             </nav>
         </div>
     </header>
+    <section>
+        <h2>Welcome to NextGen</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quae velit reiciendis molestias voluptatum
+            tenetur sunt alias, obcaecati placeat ad magni nam repellat quibusdam incidunt dolor quisquam perspiciatis?
+            Fuga sint quia natus deleniti ex!</p>
+        <button class="sbtn">Explore</button>
+    </section>
 </body>
 
 </html>
