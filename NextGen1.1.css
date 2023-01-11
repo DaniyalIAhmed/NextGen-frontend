@@ -8,6 +8,8 @@ body {
     background-color: black;
 }
 
+
+
 /* Navigation Menu */
 .navbar {
     display: flex;
@@ -100,6 +102,7 @@ li:hover>ul {
     border: 2px solid white;
     border-radius: 10px;
     background: none;
+    outline: none;
 }
 
 .s::placeholder {
@@ -108,6 +111,7 @@ li:hover>ul {
 
 .s:active::placeholder {
     color: rgb(88, 219, 110);
+    border-color: rgb(88, 219, 110);
 }
 
 .s:hover::placeholder {
@@ -139,6 +143,7 @@ li:hover>ul {
     color: rgb(109, 185, 122);
     border-color: rgb(109, 185, 122);
 }
+
 
 
 /* Section Home: */
@@ -198,10 +203,12 @@ li:hover>ul {
     border-color: rgb(109, 185, 122);
 }
 
+
+
 /* Styling Services: */
 .services::before {
     content: "";
-    background: url('s2.1bg.jpg')no-repeat center center/cover;
+    background: url('sbg.jpg')no-repeat center center/cover;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -224,6 +231,7 @@ li:hover>ul {
     height: 50vh;
     justify-content: space-evenly;
     margin-top: 140px;
+    margin-bottom: 9.57%;
 }
 
 .box {
@@ -232,16 +240,223 @@ li:hover>ul {
     width: 25vw;
     /* background-color: rgb(117, 116, 114); */
     border-left: 2px solid black;
-    border-right: 2px solid black;
+    border-right: 2px solid rgb(151, 149, 149);
     text-align: center;
     padding: 10px;
 }
 
 .box>h4 {
     font-size: 2rem;
+
 }
 
 .box>p {
     font-size: 1.5rem;
     text-align: center;
+}
+
+
+
+/* Products Styling */
+/* .product::before {
+    content: "";
+    background: url('pbg.jpg')no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    opacity: 0.6;
+}
+.product{
+    display: flex;
+    flex-direction: column;
+}
+.des{
+    border: 2px solid black;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    height: 50%;
+}
+
+.pcontainer{
+    border: 2px solid black;
+    width: 100%;
+    height: 110%;
+} */
+.products::before {
+    content: "";
+    background: url('pbg.jpg') no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+.pcontainer {
+    width: 90%;
+    height: 90vh;
+    margin: 0 auto;
+    padding-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.heading {
+    width: 100%;
+    text-align: center;
+}
+
+.heading>h2 {
+    font-size: 4rem;
+    color: white;
+}
+
+.heading>p {
+    font-size: 2.5rem;
+    color: white;
+}
+
+.pcontent {
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    border-radius: 10px;
+    height: 64vh;
+    display: flex;
+}
+
+.item1 {
+    /* border: 2px solid black; */
+    width: 50%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5vh;
+}
+
+.item1>h3 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.item1>p {
+    font-size: 2rem;
+    text-align: center;
+
+}
+
+.btn1 {
+    cursor: pointer;
+    width: 6vw;
+    height: 5vh;
+    color: white;
+    background: none;
+    font-size: 1rem;
+    outline: none;
+    border: 2px solid white;
+    border-radius: 10px;
+    margin-top: 4vh;
+}
+
+.btn1:hover {
+    color: rgb(88, 219, 110);
+    border: 2px solid rgb(88, 219, 110);
+}
+
+.btn1:active {
+    color: rgb(109, 185, 122);
+    border: 2px solid rgb(109, 185, 122);
+}
+
+.item2 {
+    /* border: 2px solid black; */
+    width: 50%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.box1 {
+    /* border: 2px solid black; */
+    height: 50%;
+    text-align: center;
+    padding: 0 30px;
+}
+
+.box1>h2 {
+    font-size: 2rem;
+}
+
+.box1>p {
+    font-size: 1.5rem;
+}
+
+.box1>button {
+    height: 4vh;
+    color: white;
+    background: none;
+    outline: none;
+    border: 2px solid white;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.box1>button:hover {
+    color: rgb(88, 219, 110);
+    border: 2px solid rgb(88, 219, 110);
+}
+
+.box2 {
+    /* border: 2px solid black; */
+    height: 50%;
+    text-align: center;
+    padding: 0 30px;
+}
+
+.box2>h2 {
+    font-size: 2rem;
+}
+
+.box2>p {
+    font-size: 1.5rem;
+}
+
+.box2>button {
+    height: 4vh;
+    color: white;
+    background: none;
+    outline: none;
+    border: 2px solid white;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.box2>button:hover {
+    color: rgb(88, 219, 110);
+    border: 2px solid rgb(88, 219, 110);
+}
+
+
+
+
+/* Styling form section */
+.form::before {
+    content: "";
+    background: url('formb.jpg')no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+.dform {
+    text-align: center;
+    padding-top: 5vh;
+    color: white;
+}
+
+.dform>h2 {
+
+    font-size: 4rem;
 }
