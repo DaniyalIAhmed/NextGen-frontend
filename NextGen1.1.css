@@ -1,0 +1,561 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap');
+
+/* Body reset */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: black;
+}
+
+
+
+/* Navigation Menu */
+.navbar {
+    display: flex;
+    margin-top: 0.9%;
+
+}
+
+.sign {
+    font-size: 1.5rem;
+    margin: 13px 0px;
+    padding-right: 4rem;
+    padding-left: 4rem;
+    color: white;
+}
+
+.sign:hover {
+    cursor: pointer;
+    color: rgb(88, 219, 110);
+}
+
+.list {
+    display: flex;
+    list-style: none;
+}
+
+.list>li>a {
+    text-decoration: none;
+    color: white;
+    padding: 0px 2rem;
+    font-size: 1.2rem;
+}
+
+.list>li>a:hover {
+    color: rgb(88, 219, 110);
+}
+
+/* Targeting Interior ul and designing  */
+li>ul {
+    display: none;
+    transition: 5s;
+}
+
+li>ul li {
+    list-style: none;
+    margin: 8px 0;
+
+}
+
+li>ul li a {
+    color: white;
+    text-decoration: none;
+
+}
+
+li>ul li:hover {
+    cursor: pointer;
+    color: rgb(88, 219, 110);
+}
+
+li:hover>ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    padding: 0px 0px 0px 0px;
+    justify-content: left;
+}
+
+.low {
+    margin-left: 2rem;
+}
+
+.lower {
+    padding: 0px;
+}
+
+.lower a:hover {
+    color: rgb(88, 219, 110);
+}
+
+.search {
+    display: flex;
+    justify-content: right;
+    width: 45%;
+}
+
+.s {
+    height: 50%;
+    margin-top: 10px;
+    font-size: 1rem;
+    border: 2px solid white;
+    border-radius: 10px;
+    background: none;
+    outline: none;
+}
+
+.s::placeholder {
+    color: white;
+}
+
+.s:focus {
+    color: rgb(88, 219, 110);
+    border-color: rgb(88, 219, 110);
+}
+
+.s:focus::placeholder {
+    color: rgb(88, 219, 110);
+}
+
+.btn {
+    height: 50%;
+    margin-top: 14px;
+    margin-left: 2%;
+    font-size: 1rem;
+    border: 2px solid white;
+    border-radius: 10px;
+    background: none;
+    color: white;
+}
+
+.s:active {
+    border: 2px solid rgb(88, 219, 110);
+}
+
+.btn:hover {
+    cursor: pointer;
+    color: rgb(88, 219, 110);
+    border: 2px solid rgb(88, 219, 110);
+}
+
+.btn:active {
+    color: rgb(109, 185, 122);
+    border-color: rgb(109, 185, 122);
+}
+
+
+
+/* Section Home: */
+.home::before {
+    content: "";
+    position: absolute;
+    background: url('bg.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 99%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+.home {
+    /* margin-top: 0%; */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.home>h2 {
+    text-align: center;
+    font-size: 4rem;
+}
+
+.home>p {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.hbtn {
+    width: 10%;
+    font-size: 25px;
+    height: 50px;
+    margin-top: 15%;
+    background: none;
+    border: 2px solid white;
+    border-radius: 10px;
+    color: white;
+    margin-bottom: 10%;
+}
+
+.hbtn:hover {
+    cursor: pointer;
+    color: rgb(88, 219, 110);
+    border-color: rgb(88, 219, 110);
+}
+
+.hbtn:active {
+    color: rgb(109, 185, 122);
+    border-color: rgb(109, 185, 122);
+}
+
+
+
+/* Styling Services: */
+.services::before {
+    content: "";
+    background: url('sbg.jpg')no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    opacity: 0.6;
+}
+
+.services {
+    color: white;
+}
+
+.services>h2 {
+    text-align: center;
+    padding-top: 10%;
+    font-size: 4rem;
+}
+
+.scontainer {
+    display: flex;
+    height: 50vh;
+    justify-content: space-evenly;
+    margin-top: 140px;
+    margin-bottom: 9.57%;
+}
+
+.box {
+    border-radius: 20px;
+    height: 40vh;
+    width: 25vw;
+    /* background-color: rgb(117, 116, 114); */
+    border-left: 2px solid black;
+    border-right: 2px solid rgb(151, 149, 149);
+    text-align: center;
+    padding: 10px;
+}
+
+.box>h4 {
+    font-size: 2rem;
+
+}
+
+.box>p {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+
+
+/* Products Styling */
+/* .product::before {
+    content: "";
+    background: url('pbg.jpg')no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    opacity: 0.6;
+}
+.product{
+    display: flex;
+    flex-direction: column;
+}
+.des{
+    border: 2px solid black;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    height: 50%;
+}
+
+.pcontainer{
+    border: 2px solid black;
+    width: 100%;
+    height: 110%;
+} */
+.products::before {
+    content: "";
+    background: url('pbg.jpg') no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+.pcontainer {
+    width: 90%;
+    height: 90vh;
+    margin: 0 auto;
+    padding-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.heading {
+    width: 100%;
+    text-align: center;
+}
+
+.heading>h2 {
+    font-size: 4rem;
+    color: white;
+}
+
+.heading>p {
+    font-size: 2.5rem;
+    color: white;
+}
+
+.pcontent {
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    border-radius: 10px;
+    height: 64vh;
+    display: flex;
+}
+
+.item1 {
+    /* border: 2px solid black; */
+    width: 50%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5vh;
+}
+
+.item1>h3 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.item1>p {
+    font-size: 2rem;
+    text-align: center;
+
+}
+
+.btn1 {
+    cursor: pointer;
+    width: 6vw;
+    height: 5vh;
+    color: white;
+    background: none;
+    font-size: 1rem;
+    outline: none;
+    border: 2px solid white;
+    border-radius: 10px;
+    margin-top: 4vh;
+}
+
+.btn1:hover {
+    color: rgb(88, 219, 110);
+    border: 2px solid rgb(88, 219, 110);
+}
+
+.btn1:active {
+    color: rgb(109, 185, 122);
+    border: 2px solid rgb(109, 185, 122);
+}
+
+.item2 {
+    /* border: 2px solid black; */
+    width: 50%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.box1 {
+    /* border: 2px solid black; */
+    height: 50%;
+    text-align: center;
+    padding: 0 30px;
+}
+
+.box1>h2 {
+    font-size: 2rem;
+}
+
+.box1>p {
+    font-size: 1.5rem;
+}
+
+.box1>button {
+    height: 4vh;
+    color: white;
+    background: none;
+    outline: none;
+    border: 2px solid white;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.box1>button:hover {
+    color: rgb(88, 219, 110);
+    border: 2px solid rgb(88, 219, 110);
+}
+
+.box2 {
+    height: 50%;
+    text-align: center;
+    padding: 0 30px;
+}
+
+.box2>h2 {
+    font-size: 2rem;
+}
+
+.box2>p {
+    font-size: 1.5rem;
+}
+
+.box2>button {
+    height: 4vh;
+    color: white;
+    background: none;
+    outline: none;
+    border: 2px solid white;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.box2>button:hover {
+    color: rgb(88, 219, 110);
+    border: 2px solid rgb(88, 219, 110);
+}
+
+
+
+
+/* Styling form section */
+.form::before {
+    content: "";
+    background: url('formb.jpg')no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dform {
+    padding-top: 5vh;
+    color: white;
+    width: 50%;
+}
+
+.dform>h2 {
+    text-align: center;
+    font-size: 4rem;
+}
+
+.dform>form {
+    /* padding-left: 15vw; */
+    /* display: flex;
+    flex-direction: column; */
+    margin-top: 8vh;
+}
+
+.infor {
+    font-size: 12px;
+}
+
+.input {
+    height: 3vh;
+    outline: none;
+    background: none;
+    /* border: 2px solid white; */
+    border: none;
+    color: white;
+    border-bottom: 2px solid white;
+    width: 35%;
+    font-size: 1.5rem;
+    transition: width 1s ease-in-out;
+}
+
+.mail {
+    margin: 3vh 0;
+}
+.mail>label{
+    font-size: 2rem;
+}
+.mail>input{
+    display: block;
+}
+.mail>input:focus {
+    /* background: none; */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    caret-color: white;
+}
+.pass>label{
+    font-size: 2rem;
+
+}
+.pass>input{
+    display: block;
+    margin-bottom: 5%;
+}
+.gender>label{
+    display: block;
+    font-size: 2rem;
+}
+.gender>input{
+    cursor: pointer;
+}
+.input:focus{
+    color: white;
+    width: 50%;
+}
+.txt{
+    margin: 3vh 0;
+}
+.txt>label{
+    display: block;
+    font-size: 2rem;
+}
+.txt>textarea{
+    outline: none;
+    display: fixed;
+    background: none;
+    border: 2px solid white;
+    border-radius: 10px;
+    caret-color: white;
+    font-size: 1.5rem;
+}
+.txt>textarea:focus{
+    color: white;
+}
+.ebtn{
+    height: 4vh;
+    align-self: center;
+    margin-left: 15vw;
+}
+footer{
+    color: white;
+    background-color: black;
+    height: 6vh;
+    /* text-align: center; */
+}
+footer>p{
+    margin: 0;
+    padding-top: 20px;
+    padding-left: 20px;
+}
